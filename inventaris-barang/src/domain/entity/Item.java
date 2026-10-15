@@ -1,0 +1,37 @@
+package domain.entity;
+
+/** Entity barang inventaris: nama, jumlah stok, dan kategori. */
+public class Item {
+    private final int id;
+    private String name;
+    private int quantity;
+    private String category;
+
+    public Item(int id, String name, int quantity, String category) {
+        this.id = id;
+        this.name = name;
+        this.quantity = quantity;
+        this.category = category;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    /** Mengubah jumlah stok. */
+    public void changeQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+}
